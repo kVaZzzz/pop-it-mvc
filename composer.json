@@ -1,0 +1,25 @@
+{
+    "name": "gr423_elmva/pop-it-mvc",
+    "description": "mega krutoy proekt",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "elmva",
+            "email": "elokhov.2015@mail.ru"
+        }
+    ],
+
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "": "app/"
+        }
+    }
+
+}
