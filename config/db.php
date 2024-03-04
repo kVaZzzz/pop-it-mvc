@@ -1,11 +1,11 @@
 <?php
 return [
-   'driver' => 'mysql',
-   'host' => 'db',
-   'database' => 'db',
-   'username' => 'root',
-   'password' => 'QWEasd123!',
-   'charset' => 'utf8',
-   'collation' => 'utf8_unicode_ci',
-   'prefix' => '',
+    'driver' => 'mysql',
+    'host' => 'localhost',
+    'database' => 'yhimrghx_m4',
+    'username' => 'yhimrghx',
+    'password' => 'HV5bbV',
+    'charset' => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix' => '',
 ];
