@@ -5,8 +5,14 @@ namespace Controller;
 use Model\Post;
 use Src\View;
 use Src\Request;
-use Model\User;
 use Src\Auth\Auth;
+use Model\Doctors;
+use Model\Appoitments;
+use Model\Job_titles;
+use Model\patients;
+use Model\Roles;
+use Model\User;
+
 class Site
 {
     public function index(Request $request): string
@@ -45,6 +51,14 @@ class Site
     {
         Auth::logout();
         app()->route->redirect('/hello');
+    }
+
+    public function add(Request $request): string
+    {
+        if ($request->method === 'POST' && Doctors::create($request->all())) {
+            app()->route->redirect('/hello');
+        }
+        return new View('site.add');
     }
 }
 
