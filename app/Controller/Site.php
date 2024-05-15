@@ -60,5 +60,28 @@ class Site
         }
         return new View('site.add');
     }
+    public function find_patient(): string
+    {
+    return new View('site.find_patient');
+    }
+    public function find_doctor(): string
+    {
+    return new View('site.find_doctor');
+    }
+    public function patient(): string
+    {
+    return new View('site.patient');
+    }
+    public function record(): string
+    {
+    return new View('site.record');
+    }
+    public function cancel_record(): string
+    {
+    return new View('site.cancel_record');
+    }
+    public function add_employee(): string
+    {
+    return new View('site.add_employee');
+    }
 }
-
