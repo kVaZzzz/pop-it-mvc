@@ -1,25 +1,12 @@
-<h2>Карточка пациента</h2>
-<h3><?= $message ?? ''; ?></h3>
-<div class="record">
-    <h2>ID</h2>
-    <ul>
-        <li>Фамилия:</li>
-        <li>Имя:</li>
-        <li>Отчество:</li>
-        <li>Дата рождения:</li>
-    </ul>
-    <div id="rec_info">Запись: </div>
-</div>
-<div class="record_add">
-    <label>Выберите врача 
-            <select name="ID_Job_title">
-                <option value="1">Терапевт</option>
-                <option value="2">Окулист</option>
-                <option value="3">Травматолог</option>
-                <option value="4">Хирург</option>
-            <select>
-        </label>
-    <label for="start">Выберите дату</label>
-    <input type="date" class="date" name="trip-start" min="1900-01-01" max="2025-12-31" />
-    <button id="butt">Записать</button>
-</div>
+<h1><?= $message ?? ''; ?></h1>
+<form class="add-form" method="POST" enctype="multipart/form-data">
+<input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+    <input  type="text" id="name" name="name" placeholder="Имя"><br>
+    <input  type="text" id="surname" name="surname" placeholder="Фамилия"><br>
+    <input  type="text" id="patronym" name="patronym" placeholder="Отчество"><br>
+    <label for="date_of_birth">Дата рождения:</label>
+    <input  type="date" id="date_of_birth" name="date_of_birth"><br>
+    <input type="file" name="image" accept="image/*"><br> <!-- Поле для загрузки изображения -->
+    <button type="submit">Отправить</button>
+</form>
+    

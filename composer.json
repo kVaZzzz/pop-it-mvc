@@ -1,28 +1,29 @@
 {
-    "name": "gr423_elmva/pop-it-mvc",
-    "description": "mega krutoy proekt",
+    "name": "spacecreatedd/pop-it-mvc",
+    "description": "practise for a server side",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "elmva",
-            "email": "elokhov.2015@mail.ru"
+            "name": "spacecreatedd",
+            "email": "kimzhenya1313@mail.ru"
         }
     ],
-
     "minimum-stability": "dev",
     "require": {
         "php": "^7.4 | ^8.0",
-        "illuminate/database": "10.x-dev",
-        "illuminate/events": "10.x-dev",
-        "nikic/fast-route": "^2.0@dev"
-    },
-
-    "autoload": {
+        "illuminate/database": "9.x-dev",
+        "illuminate/events": "9.x-dev",
+        "nikic/fast-route": "v1.x-dev",
+        "spacecreatedd/composer": "dev-master",
+        "spacecreatedd/my-auth-package": "dev-master",
+        "spacecreatedd/session": "dev-master"
+     
+     },
+     "autoload": {
         "psr-4": {
             "Src\\": "core/Src/",
             "": "app/"
         }
-    }
-
+    } 
 }
